@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/a0b36519ee/UntitledProject/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b6d60c0730.js" crossorigin="anonymous"></script>
+    <title>New Tab</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/home-solid.svg">
+    <script type="text/javascript">
+        function FocusOnInput() {
+            document.getElementById("search-input").focus();
+        }
+    </script>
+</head>
+
+
+<body class="" onload="FocusOnInput()">
+    <span class="welcome-msg">Oh hi Murilo, have a nice day!</span>
+    <div class="search">
+        <div class="search-engine">
+            <div class="engine-item" id="brave-button" onclick="engine(1)">
+                <img src="../assets/brave.svg" alt="Brave" class="engine-icon">
+                <span class="engine-name">Brave Search</span>
+            </div>
+            <div class="engine-item active" id="google-button" onclick="engine(2)">
+                <img src="../assets/google.svg" alt="Google" class="engine-icon">
+                <span class="engine-name">Google</span>
+            </div>
+            <div class="engine-item" id="ddg-button" onclick="engine(3)">
+                <img src="../assets/duckduckgo.svg" alt="Duckduckgo" class="engine-icon">
+                <span class="engine-name">DuckDuckGo</span>
+            </div>
+        </div>
+        <div class="search-bar">
+            <input type="search" class="search-input" id="search-input" />
+            <button type="submit" onclick="search()"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="theme-change">
+            <i class="fas fa-sun" onclick="themeChange()"></i>
+        </div>
+    </div>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>
