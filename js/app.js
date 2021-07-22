@@ -35,6 +35,14 @@ function engine(value) {
     engineNumber = value;
 }
 
+var input = document.getElementById("search-input");
+
+input.addEventListener("keydown", function(event) {
+    if (event.keyCode === 13) {
+        document.getElementById("search-button").click();
+    }
+});
+
 function search() {
     value = document.getElementById('search-input').value;
 
