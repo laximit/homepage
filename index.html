@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>&#47;home</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="nord" onload="FocusOnInput()">
+	<div class="window">
+		<div class="title">
+			<span class="title_user">$</span>
+			<span class="title_message">homepage</span>
+		</div>
+		<div class="links">
+			<span class="link_category">/* social */</span>
+			<a href="https://reddit.com" class="page_link">reddit</a>
+			<a href="https://youtube.com" class="page_link">youtube</a>
+			<span class="link_category">/* workflow */</span>
+			<a href="https://github.com/laximit" class="page_link">github</a>
+			<a href="https://notion.so" class="page_link">notion</a>
+			<a href="https://figma.com" class="page_link">figma</a>
+		</div>
+		<div class="search">
+			<span class="search_title">$</span>
+			<input type="search" id="search_bar"/>
+			<button id="search_button" type="submit" onclick="search()"></button>
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+</html>
